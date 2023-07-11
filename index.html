@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Employee Survey Form</h1>
+        <p id="description" class="description">Thanks for helping our company to improve</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label>
+          <input class="form-control" type="text" id="name" placeholder="Enter your name"
+          required>
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label>
+          <input class="form-control" type="email" id="email" placeholder="yourname@example.com"
+          required>
+        </div>
+        <div class="form-group">
+          <label id="number-label">Age</label>
+          <input class="form-control" type="number" id="number" max="120" min="12" placeholder="12"required>
+        </div>
+        <div class="form-group">
+          <p>What's your job?</p>
+          <select id="dropdown" class="form-control" required>
+            <option disable selected value>Select current job</option>
+            <option value="trainee">Trainee</option>
+            <option value="assistant">Assistant</option>
+            <option value="analyst">Analyst</option>
+            <option value="supervisor">Supervisor</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend us to GPTW?</p>
+          <label>
+            <input name="user-recommend" type="radio" value="definitely" class="input-radio" checked> Definitely
+          </label>
+          <label>
+            <input name="user-recommend" type="radio" value="maybe" class="input-radio"> Maybe
+          </label>
+          <label>
+            <input name="user-recommend" type="radio" value="not-sure" class="input-radio"> Not sure
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="improve">What you would like to see improved?(check all that apply)</p>
+          <label>
+            <input value="work-enviroment" name="prefer" type="checkbox" class="input-checkbox">Work Enviroment
+          </label>
+          <label>
+            <input value="stakeholders-relationship" name="prefer" type="checkbox" class="input-checkbox">Stakeholders Relationship
+          </label>
+          <label>
+            <input value="better-workspace"name="prefer" type="checkbox" class="input-checkbox">Better Workspace
+          </label>
+          <label>
+            <input value="better-benefits"name="prefer" type="checkbox" class="input-checkbox">Better Benefits
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="suggest">Any comments or suggestions?</p>
+          <textarea id="comments" type="textarea" name="comment" placeholder="Enter your comment here..." class="input-textarea"></textarea>  
+        </div>
+        <div>
+          <button type="submit" id="submit" class="submit-button" class="submit-button">Submit 
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
